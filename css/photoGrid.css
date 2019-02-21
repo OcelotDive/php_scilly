@@ -1,0 +1,55 @@
+#grid {
+    display: grid;
+    grid-gap: 0.8%;
+    padding: 0%;
+    overflow: hidden;
+    width: 99.5%;
+    height: 1000px;
+    margin-left: .25%;;
+    margin-top: none;
+}
+
+
+
+
+
+
+.grid-item {
+    color: white;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px #fff;;
+}
+
+.grid-item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+     transition: 1.5s;
+
+
+
+}
+
+.gridImage:hover {
+    transform: scale(1.1);
+    transition: 1.5s;
+
+
+}
+
+.gridText {
+    position: absolute;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 1vw;
+    transition: 1.5s;
+}
+
+.three {
+    grid-area: 2 / 2 / 4 / 4;
+}

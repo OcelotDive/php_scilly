@@ -1,0 +1,35 @@
+.footerList {
+    list-style: none;
+    color: #fff;
+    font-size: 8pt;
+    text-align: center;
+}
+.footerList a {
+    text-decoration: none;
+    color: #fff;
+}
+.footerList a:visited {
+    color: #fff;
+}
+.footerContainer {
+    width: 100%;
+    height: 22%;
+    position: relative;
+    bottom: -100;
+    left: 0%;
+
+    text-align: center;
+    
+}
+.footerContainer hr {
+  display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 1em 0;
+    padding: 0;  
+ 
+}
+.footerList a:hover {
+    color: gold;
+}
