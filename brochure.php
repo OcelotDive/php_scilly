@@ -33,8 +33,11 @@ return "<div class='brochureCard'>
         </div>";
 }
 
-
-
+$user_name = '';
+    $user_email = '';
+    $user_address = '';
+    
+        
 
 ?>
 <!DOCTYPE hmtl>
@@ -52,13 +55,15 @@ return "<div class='brochureCard'>
 
 
 <body style="background-color: #EDE7E7">
-   
+
+
+
     <?php include 'components/Header.html'; ?>
     <h1 class="brochurePageTitle">Brochures</h1>
     <p class="brochureOrderInfo">
         <?php echo $orderInfo ?>
     </p>
-    
+
     <section class="brochureContainer">
         <?php echo createCard($brochureName1, $IslandTourImage); ?>
         <?php echo createCard($brochureName2, $scubaImage); ?>
@@ -66,50 +71,134 @@ return "<div class='brochureCard'>
         <?php echo createCard($brochureName4, $hotelsImage); ?>
         <?php echo createCard($brochureName5, $fishingImage); ?>
         <?php echo createCard($brochureName6, $backpackingImage); ?>
+
+
+
     </section>
+
+    <?php 
     
-  <?php 
     
    
-        $customerArray = [];
-        array_push($customerArray, $_POST, $_COOKIE);
-   
-       
+
         
-     
     
+    
+   
+       $errors = array('user_name'=>'', 'user_email'=>'', 'user_address'=>'');
+    
+    if(isset($_POST['submit'])) {
+
+        
+//check name
+if(empty($_POST['user_name'])){
+    $errors['user_name'] = '* Name field required';
+    
+}
+
+else {
+    $user_name = $_POST['user_name'];
+    
+}
+    
+//check email
+if(empty($_POST['user_email'])){
+    $errors['user_email'] = '* Valid email required';
+    
+}
+else {
+ $user_email = $_POST['user_email'];
+    
+    if(!filter_var($user_email, FILTER_VALIDATE_EMAIL)) {
+        $errors['user_email'] =  '* Enter valid email';
+    }
+}
+       
+//check address
+if(empty($_POST['user_address'])){
+    $errors['user_address'] = '* Address field required';
+    
+}
+else {
+    $user_address = $_POST['user_address'];
+     
+}
+        
+    }
+  $orderObject = '';
     ?>
-    <div class="splitter">
+
+    <div class="splitter"></div>
+
     <form class="brochureForm" action="brochure.php" method="post">
-     <fieldset>
-    <legend> Your Details</legend>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="user_name" />
+        <fieldset>
+            <legend> Your Details</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" value="<?php  echo htmlspecialchars($user_name); ?>" />
+            <div class="redText">
+                <?php echo $errors['user_name'] ?>
+            </div>
 
-    <label for="mail">Email:</label>
-    <input type="email" id="mail" name="user_email" />
+            <label for="mail">Email:</label>
+            <input type="email" id="email" name="user_email" value="<?php  echo htmlspecialchars($user_email); ?>" />
+            <div class="redText">
+                <?php echo $errors['user_email'] ?>
+            </div>
 
-    <label for="address">Address:</label>
-    <input type="text" id="address" name="user_address" />
-         <button type="submit">Submit</button>
-    </fieldset>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="user_address" value="<?php  echo htmlspecialchars($user_address); ?>" />
+            <div class="redText">
+                <?php echo $errors['user_address'] ?>
+            </div>
+
+            <button type="submit" name="submit">Submit</button>
+            <div class="dispatchLabel">
+        <?php 
+        if(isset($_POST['submit'])) {    
+           
+            if($errors['user_email'] === ''&& $errors['user_email'] === ''&& $errors['user_address'] === '') {
+        foreach(array_keys($_COOKIE) as $paramName)
+          echo str_replace('_', ', ',$paramName);
+          echo " brochures dispatched for $user_name to: $user_address";
+            }
+              }
+            
+        
+        ?>
+           </div>
+        </fieldset>
 
     </form>
-        <?php include "components/footerLinks.html"; ?>
-    </div>
-    
-    
-   
+    <?php include "components/footerLinks.html"; ?>
+
+
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
     <script src="jquery.parallaxer.js"></script>
     <script src="./js/weatherScript.js"></script>
-    
+
 </body>
 
 
 
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+console.log('this is a test');

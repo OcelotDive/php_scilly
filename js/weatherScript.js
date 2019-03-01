@@ -21,22 +21,29 @@
         const weatherImage = document.querySelectorAll('.weatherImage')[0];
         weatherImage.setAttribute('src', conditions);
         
-        const orderObject = {};
+        //brochure cookie
+        let orderString = '';
         const checkbox = document.getElementsByClassName('brochureContainer');
-      checkbox[0].addEventListener('change', (e)=> {
+         checkbox[0].addEventListener('change', (e)=> {
          
           if(e.target.checked) {
-            orderObject[e.target.id] = true;
+            if(orderString === '') {
+               orderString += e.target.id;
+            } 
+            else{
+                orderString += ', ' + e.target.id;
+            }
+              console.log(orderString)
           }
-          else {
-              orderObject[e.target.id] = false;
-          }
+          
        
        
-          let orderJson = JSON.stringify(orderObject);
+          
         
-        document.cookie = orderJson;
-        
+     document.cookie = [orderString];
+             
+      
       })
+      
     }
     }())

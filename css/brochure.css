@@ -15,7 +15,7 @@
     justify-content: center;
     align-items: top;
     flex-flow: row wrap;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
 
 
 
@@ -157,12 +157,15 @@ input[type=checkbox]:checked:disabled + label:before {
 
 .brochureForm {
     max-width: 500px;
+    height: 480px;
     margin: 10px auto;
     padding: 10px 20px;
     background: #f4f7f8;
     border-radius: 8px;
     margin-top: 5%;
     position: relative;
+    top: 50px;
+    
 }
 
 
@@ -188,7 +191,7 @@ input[type=checkbox]:checked:disabled + label:before {
     background-color: #e8eeef;
     color: #8a97a0;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 
@@ -207,7 +210,7 @@ input[type=checkbox]:checked:disabled + label:before {
     border: 1px solid #3ac162;
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 fieldset {
@@ -234,9 +237,18 @@ brochureForm label.light {
 .splitter {
     background-color: #434343;
     width: 100%;
-    height: 100%;
+    height: 855px;
     position: absolute;
-    z-index: 9999;
+    
+}
+.dispatchLabel {
+    color: green;
+    font-size: 6pt;
+    margin-top: 10px;
+}
+.redText {
+    color: red;
+    font-size: 6pt;
 }
 @media screen and (min-width: 480px) {
     form {
