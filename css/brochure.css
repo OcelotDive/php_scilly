@@ -41,7 +41,7 @@
     width: 90%;
     height: 80%;
     margin-left: 5%;
-
+    transition: all 0.5s;
 
 }
 
@@ -50,6 +50,7 @@
 
 
 }
+
 
 .brochureTitle {
     width: 110%;
@@ -89,6 +90,11 @@
 .brochureCard:hover .brochureTitle {
     font-size: 16pt;
     transition: all 0.5s;
+}
+.brochureCard:hover .brochureImage {
+     transform: scale(1.015);
+
+
 }
 
 .brochureOrderInfo {

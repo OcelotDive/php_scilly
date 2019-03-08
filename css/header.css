@@ -113,6 +113,17 @@ body {
     width: 175px;
 
 }
+.date {
+    position: absolute;
+    left: 1200px;
+    top: 20px;
+    font-size: 10pt;
+    white-space: nowrap;
+    color: gray;
+  
+    
+   
+}
 
 .navBarBottom {
     top: 80px;
