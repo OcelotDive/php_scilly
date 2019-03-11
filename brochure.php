@@ -169,6 +169,8 @@ else {
         </fieldset>
 
     </form>
+    <br/>
+    <br/>
     <?php include "components/footerLinks.html"; ?>
 
 

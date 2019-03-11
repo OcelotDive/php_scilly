@@ -171,6 +171,7 @@ input[type=checkbox]:checked:disabled + label:before {
     margin-top: 5%;
     position: relative;
     top: 50px;
+
     
 }
 
