@@ -26,7 +26,7 @@ body {
         font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
         flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
         background 0.2s;
-    font-size: 20px;
+    font-size: 10px;
     background-size: cover;
     background-position: center;
     flex: 1;
@@ -92,10 +92,15 @@ body {
 
 .panel p:nth-child(2) {
     font-size: 2em;
+    
+}
+.panel p:nth-child(2):hover {
+    cursor: pointer;
+    
 }
 
 .panel.open {
-    font-size: 30px;
+    font-size: 12px;
     flex: 5;
 }
 
@@ -122,7 +127,7 @@ body {
 
 .chat-widget-wrapper {
   display: block;
-  width: 50%;
+  width: 30%;
   height: 62px;
   bottom: 20px;
   padding: 10px;
