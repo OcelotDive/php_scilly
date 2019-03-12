@@ -1,6 +1,6 @@
  (document.onload = function() {
     const Http = new XMLHttpRequest();
-    const url = "http://api.openweathermap.org/data/2.5/weather?lat=" + 50.1791 + "&lon=" + -5.2885 + "&APPID=c8164fa3b1c605feebb21a089292ca87";
+    const url = "https://api.openweathermap.org/data/2.5/weather?lat=" + 50.1791 + "&lon=" + -5.2885 + "&APPID=c8164fa3b1c605feebb21a089292ca87";
     Http.open("Get", url);
     Http.send();
 
