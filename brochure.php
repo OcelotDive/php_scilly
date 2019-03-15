@@ -156,9 +156,11 @@ else {
         <?php 
         if(isset($_POST['submit'])) {    
            
-            if($errors['user_email'] === ''&& $errors['user_email'] === ''&& $errors['user_address'] === '') {
-        foreach(array_keys($_COOKIE) as $paramName)
-          echo str_replace('_', ', ',$paramName);
+            if($errors['user_email'] === '' && $errors['user_email'] === '' && $errors['user_address'] === '') {
+        
+        foreach(array_keys($_COOKIE) as $paramName){
+          echo str_replace('_', ' ',$paramName);
+        }
           echo " brochures dispatched for $user_name to: $user_address";
             }
               }
@@ -203,4 +205,3 @@ else {
 
 
 
-console.log('this is a test');

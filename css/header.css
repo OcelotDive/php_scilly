@@ -135,6 +135,7 @@ body {
     flex-direction: row;
     justify-content: center;
     font-family: Arial;
+   
 
 }
 
@@ -153,6 +154,7 @@ body {
 .dropdown {
   float: left;
   overflow: hidden;
+  
    
 }
 
@@ -166,12 +168,14 @@ body {
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
+   
 }
 
 /* Add a red background color to navbar links on hover */
 .navBarBottom a:hover, .dropdown:hover .dropbtn {
   background-color: white;
     color: black;
+
 }
 
 /* Dropdown content (hidden by default) */

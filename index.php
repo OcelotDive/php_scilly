@@ -5,6 +5,10 @@ $locationOne = 'St Mary\'s';
 $locationTwo = 'Tresco';
 $locationThree = 'St Martin\'s';
 
+
+
+
+
 ?>
 <!DOCYPE hmtl>
 <html>
