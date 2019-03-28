@@ -24,7 +24,7 @@ $locationThree = 'St Martin\'s';
     <?php include 'components/Header.html'; ?>
     <section class="panels">
         <div class="panel panel1">
-            <p>Submit a query to our friendly team.</p>
+            <p>Submit a query</p>
             <p id="panelTitle">Email</p>
             <p><a href="email.php">Support@elitetravel.co.uk</a></p>
         </div>
@@ -36,7 +36,7 @@ $locationThree = 'St Martin\'s';
         </div>
 
         <div class="panel panel3">
-            <p>Elite Travel Head office</p>
+            <p>Elite Travel head office</p>
             <p id="panelTitle">Post</p>
             <p>2 Ayr Road, London, NW1 4DF</p>
         </div>

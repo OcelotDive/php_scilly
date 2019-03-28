@@ -12,6 +12,7 @@ body {
     overflow: hidden;
     display: flex;
     overflow: hidden;
+    
 
 }
 
@@ -24,10 +25,10 @@ body {
     /* Safari transitionend event.propertyName === flex */
     /* Chrome + FF transitionend event.propertyName === flex-grow */
     transition:
-        font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        font-size 0.5s cubic-bezier(0.61, -0.19, 0.7, -0.11),
         flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
         background 0.2s;
-    font-size: 10px;
+    font-size: 0.3em;
     background-size: cover;
     background-position: center;
     flex: 1;
@@ -36,6 +37,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Permanent Marker', cursive;
+    width: 25%;
+    overflow: hidden;
 
 }
 
@@ -91,12 +94,12 @@ body {
 .panel p {
     text-transform: uppercase;
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-    font-size: 2em;
+    font-size: 1.2em;
 
 }
 
 .panel p:nth-child(2) {
-    font-size: 2em;
+    font-size: .8em;
 
 }
 
@@ -219,5 +222,5 @@ body {
 }
 
 #panelTitle {
-    font-size: 4em !important;
+    font-size: 3em !important;
 }

@@ -2,13 +2,19 @@
     list-style: none;
     color: #fff;
     font-size: 8pt;
-    text-align: center;
-   
+    display: flex;
+    justify-content: center;
+    margin: 0;
 
 }
 ul li{
     display: inline-block;
     margin-left: 10px;
+    font-family: 'arial';
+    font-size: 1em;
+}
+ul li:nth-child(1) {
+    margin-left: -40px;
 }
 .footerList a {
     text-decoration: none;
@@ -24,6 +30,7 @@ ul li{
     bottom: 0;
     left: 0%;
     text-align: center;
+
    
     
 }
@@ -31,7 +38,7 @@ ul li{
   display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #000;
+    border-top: 5px ridge #fff;
     margin: 1em 0;
     padding: 0;  
  

@@ -9,14 +9,16 @@
 
 .statementTitle {
     text-align: center;
-    font-size: 3em;
+    font-size: 150%;
+    white-space: nowrap;
 }
 
 .statement {
-    font-size: 1.2em;
+    font-size: 90%;
     text-align: center;
     width: 80%;
     margin: auto;
+
 
 }
 .social {
