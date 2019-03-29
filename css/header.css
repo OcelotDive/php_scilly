@@ -49,10 +49,11 @@
 }
 
 .details {
-    width: 400px;
+    width: 300px;
     display: flex;
     flex-direction: row;
     font-family: Arial;
+
 }
 
 .phoneNumber {
@@ -109,7 +110,7 @@
 }
 .date {
     position: absolute;
-    left: 82%;
+    right: 3%;
     top: 20px;
     font-size: 10pt;
     white-space: nowrap;
