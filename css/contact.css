@@ -8,10 +8,10 @@ body {
 }
 
 .panels {
-    min-height: 85vh;
+
     overflow: hidden;
     display: flex;
-    overflow: hidden;
+  height: 95%;
     
 
 }
@@ -38,6 +38,7 @@ body {
     flex-direction: column;
     font-family: 'Permanent Marker', cursive;
     width: 25%;
+    height: 100%;
     overflow: hidden;
 
 }
@@ -113,11 +114,7 @@ body {
     flex: 4;
 }
 
-.block {
-    height: 20px;
-    background: white;
 
-}
 
 .chatImage {
     border-radius: 50%;

@@ -10,7 +10,8 @@
 @import url('css/thankyou.css');
 
 
-body {
-    position: absolute;
+html {
+   
     width: 100%;
 }
+body:
