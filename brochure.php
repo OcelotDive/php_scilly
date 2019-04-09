@@ -17,11 +17,11 @@ $brochureName5 = "Fishing";
 $brochureName6 = "Backpacking";
 /*brochure images*/
 $IslandTourImage = 'images/scillyCard1.webp';
-$scubaImage = 'images/scubaImage.jpg';
-$sailingImage = 'images/sailingImage.jpg';
-$hotelsImage = 'images/hotelsImage.jpg';
-$fishingImage = 'images/fishing.jpg';
-$backpackingImage = 'images/backpacking.jpg';
+$scubaImage = 'images/scubaImage.webp';
+$sailingImage = 'images/sailingImage.webp';
+$hotelsImage = 'images/hotelsImage.webp';
+$fishingImage = 'images/fishing.webp';
+$backpackingImage = 'images/backpacking.webp';
 
 function createCard($brochureName, $brochureImage) {
     

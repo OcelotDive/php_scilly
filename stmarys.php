@@ -31,14 +31,14 @@ $locationThree = 'St Martin\'s';
     <div class="islandPage">
 
         <h1 class="islandTitle">ST MARY'S ISLAND</h1>
-            <img src="images/stMarys.jpg" />
+            <img src="images/stMarys.webp" />
             <p class="islandDescription">St. Mary’s is the Isles of Scilly’s largest island (population 1,800) and the gateway to the rest of the islands. Covering an area less than 2.5 square miles, not exactly bustling but it’s more than likely to be your first port of call when you visit.</p>
-            <img src="images/stmary.jpg" />
+            <img src="images/stmary.webp" />
             <p class="islandDescription">St Mary's is the only island of the Isles of Scilly with a significant road network and the only island with public highways, including three A roads (measuring 4.7 miles in total length) which are numbered in Zone 3 of the British numbering scheme (the A3110, A3111 and A3112); these 'A' roads are generally country lanes in nature. Roads and streets across Scilly have very few signs or markings, and route numbers are not marked at all. </p>
-            <img src="images/stmary1.jpg" />
+            <img src="images/stmary1.webp" />
             <p class="islandDescription">The Quay is where the Scillonian III passenger ferry docks every day. It’s also where you'll find yourself travelling from if you’re staying on any of the “off islands”.
                 Old Town is the other “major” settlement on St. Mary’s, closer to the airport and with its own beautiful beach, nature reserve, shop, pub and cafés.</p>
-            <img src="images/stmary3.jpg" />
+            <img src="images/stmary3.webp" />
             <p class="islandDescription">Up country, away from the relative hustle and bustle, St. Mary’s is an easy going safe haven of hidden treasures. The coastline features large stretches of deserted white sandy beaches, dramatic rocky coves, stunning seascapes, amazing archaeological sites and country paths and nature trails.</p>
      <div class="clear"></div>
           <?php include "components/footerLinks.html"; ?>

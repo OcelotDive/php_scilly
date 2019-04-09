@@ -30,14 +30,14 @@ $locationThree = 'St Martin\'s';
     <div class="islandPage">
 
         <h1 class="islandTitle">ST MARTIN'S ISLAND</h1>
-        <img src="images/stmartins.jpg" />
+        <img src="images/stmartins.webp" />
         <p class="islandDescription">Crystal clear waters, idyllic beaches and a prevailing sense of calm make St. Martin's a delight. With its iconic red and white Daymark, erected in 1683 by Thomas Ekins, it is the first island you spot as you cross from the mainland. </p>
         
-        <img src="images/stmartins2.jpg" />
+        <img src="images/stmartins2.webp" />
         <p class="islandDescription">The island is just two miles long, yet it has some of the finest beaches in the British Isles, if not the world. Whether searching the rock pools in Lawrence’s Bay, or taking a dip in the water off the sweeping Par Beach or simply chilling on Bread and Cheese Cove, Great Bay or Little Bay, they all jostle for the accolade!</p>
-        <img src="images/stmartins3.jpg" />
+        <img src="images/stmartins3.webp" />
         <p class="islandDescription">Behind these beautiful scenes, there lies an enterprising and diverse community. The 120 or so inhabitants are industrious folk – there’s a flower farm and vineyard – both open to visitors, a fabulous dive school offering underwater adventures and snorkelling with seals and a locally-inspired silver jewellery designer.</p>
-        <img src="images/stmartins4.jpg" />
+        <img src="images/stmartins4.webp" />
         <p class="islandDescription">At St. Martin's store, off licence and post office, visitors can purchase everything they need for a great holiday - it can even be delivered in advance to accommodation across the island.</p>
 
         <div class="clear"></div>
