@@ -45,23 +45,23 @@ body {
 
 
 .panel1 {
-    background-image: url('../images/contact1.webp');
+    background-image: url('../images/contact1.jpeg');
 }
 
 .panel2 {
-    background-image: url('../images/contact9.webp');
+    background-image: url('../images/contact9.jpg');
 }
 
 .panel3 {
-    background-image: url('../images/contact3.jfif');
+    background-image: url('../images/contact3.jpg');
 }
 
 .panel4 {
-    background-image: url('../images/contact5.webp');
+    background-image: url('../images/contact5.jpg');
 }
 
 .panel5 {
-    background-image: url('../images/contact7.webp');
+    background-image: url('../images/contact7.jpg');
 }
 
 .panel > * {
